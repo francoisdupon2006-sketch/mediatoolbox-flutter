@@ -1,0 +1,41 @@
+name: mediatoolbox
+description: "Compresseur video, convertisseur M3U8, reformulateur de phrases IA"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # FFmpeg pour compression video et conversion M3U8
+  ffmpeg_kit_flutter_new: ^1.6.0
+
+  # File picking et gestion de fichiers
+  file_picker: ^8.1.2
+  path_provider: ^2.1.4
+  permission_handler: ^11.3.1
+
+  # Reformulateur - appel API Gemini
+  http: ^1.2.2
+
+  # Historique local du reformulateur
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+
+  # State management
+  provider: ^6.1.2
+
+  # UI
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
